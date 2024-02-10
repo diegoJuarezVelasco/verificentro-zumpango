@@ -1,0 +1,16 @@
+
+<IfModule mod_headers.c>
+ Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+Options All -Indexes
+
+RedirectMatch 403 /\..*$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+).(d+).(js|css)$ $1.$3 [L]
+
+#order deny,allow
+#deny from all
+#allow from 201.141.22.104
+
+
