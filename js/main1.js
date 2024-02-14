@@ -8,7 +8,6 @@ $(document).ready(function () {
     $("nav.navegacion-principal").slideUp(1000);
   };
   menu_movil.addEventListener("click", mostrarOcultarMenu);
-  
   var page_url = window.location.href;
   var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
     console.log(page_id);
@@ -64,6 +63,7 @@ $(document).ready(function () {
       );
     }
   });
+
 
 
 });
